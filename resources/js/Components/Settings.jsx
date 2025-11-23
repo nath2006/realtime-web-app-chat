@@ -1,6 +1,16 @@
 import Dropdown from "./Dropdown";
 
 export default function Settings({}) {
+
+    const logout = () => {
+        axios.post('/logout').then(response => {
+            window.location.href = '/login';
+        }).catch(error => {
+            console.error('Logout failed:', error);
+        });
+    }
+
+
     return (
         <Dropdown>
             <Dropdown.Trigger>
