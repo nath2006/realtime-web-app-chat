@@ -1,6 +1,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head} from '@inertiajs/react';
-import { Settings } from 'lucide';
+import Settings from '@/Components/Settings';
 
 export default function Welcome({ auth }) {
     return (
@@ -13,7 +13,7 @@ export default function Welcome({ auth }) {
                             <div className='flex justify-between mb-2'>
                                 <h1 className='text-white text-xl font-bold'>WebChat</h1>
                                 <div>
-                                    # Settings #
+                                    <Settings/>
                                 </div>
                             </div>
                                 # SEARCH #
